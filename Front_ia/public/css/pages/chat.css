@@ -1,0 +1,87 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px; /* Aumentar el ancho del chat */
+  margin: auto;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh; /* Aumentar la altura del chat */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
+.messages-container {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 70%; /* Limitar el ancho del mensaje */
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  word-wrap: break-word; /* Evita que el texto se desborde */
+  display: inline-block;
+  white-space: pre-wrap; /* Mantiene saltos de línea en el texto */
+  word-break: break-word; /* Asegura que las palabras largas se rompan si es necesario */
+}
+
+
+.message.left {
+  align-self: flex-start;
+  background-color: #c8dbff;
+  color: #000000;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+  max-width: 70%;
+}
+
+.message.right {
+  align-self: flex-end;
+  background-color: #2563eb;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+  max-width: 70%;
+}
+
+.input-form {
+  display: flex;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.send-button {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
