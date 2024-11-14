@@ -38,3 +38,5 @@ uvicorn main:app --reload
     ```
 
   ### Una vez completados estos pasos, el sistema estará corriendo tanto en el backend como en el frontend.
+
+  ### Se debe de tener descargado Ollama y el modelo de llama 3.2:1b para el funcionamiento de este proyecto
